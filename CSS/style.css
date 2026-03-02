@@ -1,0 +1,496 @@
+body {
+  margin: 0;
+  background: #f6f2ec;
+  font-family: 'Cormorant Garamond', serif;
+  color: #1c1c1c;
+    font-size: 16px;
+    opacity: 0;
+     transition: opacity 0.3s ease;
+}
+body.page-loaded {
+  opacity: 1;
+}
+
+.wedding {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.parallax {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.parallax__bg {
+  position: absolute;
+  inset: -50px;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+  will-change: transform;
+}
+
+.hero__bg {
+  background-image: url("../images/hero.jpg");
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+}
+
+.photo-date__bg {
+  background-image:
+    url("../images/photo-date.jpg");
+  background-blend-mode: soft-light;
+  background-position: 10% 10%;
+}
+
+.dresscode__bg {
+  background-image:
+    url("../images/dresscode.JPG");
+    background-position: 70% 15%;
+}
+
+.footer_bg{
+  background-image:
+    url("../images/footer.jpg");
+    background-position: 70% 15%;
+    color: white;
+    background-size: cover;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6); 
+  background-blend-mode: multiply; 
+
+}
+
+.overlay-dark {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* HERO */
+.hero__symbol{
+      font-family: "Ballet", cursive;
+      font-size: 164px;
+      font-weight:lighter;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 20px;
+      margin-left: -50px;
+      margin-bottom: 20px;
+      p{
+        margin: -70px;
+      }
+.hero__symbol-second{
+  margin-left: 10px;
+}
+}
+.hero__content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+}
+
+.hero__names {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.10em;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.hero__date {
+      font-family: "Ballet", cursive;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+/* SECTIONS */
+.section {
+  padding: 4rem 2rem;
+}
+
+.paper-tear-container {
+  position: relative;
+  width: 100%;
+  height: 80px; 
+  margin-top: -60px; 
+  margin-bottom: -40px; 
+  z-index: 10;
+  pointer-events: none;
+}
+
+.paper-tear-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.paper-tear-container1 {
+  position: relative;
+  width: 100%;
+  height: 80px; 
+  margin-top: -60px;
+  margin-bottom: -60px;
+  z-index: 10;
+  pointer-events: none; 
+}
+
+.paper-tear-image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+  display: block;
+  transform: rotate(180deg);
+}
+
+.section--light { background: white; }
+.section--cream { background: #f3ece4; }
+.section--dark  { background: #1a1a1a; color: white; }
+.section--center { text-align: center; }
+
+.heading {
+  font-family: "Cormorant Garamond", serif;
+  letter-spacing: 0.10em;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.text {
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.photo-date{
+    min-height: 450px;
+}
+
+.photo-date__date {
+  margin-top: 3.5rem;
+  position: relative;
+  z-index: 3;
+  color: white;
+
+  font-family: "Ballet", cursive;
+  font-size: 13rem;         
+  font-weight: 500;
+
+  text-align: center;
+  line-height: 0.5;             
+  letter-spacing: 0; 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Timeline */
+.section--cream {
+  background: #fff;
+  padding: 4rem 2rem;
+}
+
+.heading_time {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.timeline li {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.time {
+  font-family: "Ballet", cursive;
+  font-size: 1.7rem;
+  min-width: 70px;
+  letter-spacing: 0.1rem;
+  margin-top: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+
+  .palka{
+ font-size: 1.2rem;
+  }
+}
+
+.event h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+}
+
+.event p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  max-width: 260px;
+}
+/* Place */
+.location {
+  position: relative;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.location__bg {
+  position: absolute;
+  inset: 0;
+  background: url("../images/place.jpg") center/cover no-repeat;
+  z-index: 1;
+}
+
+.location__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 2;
+}
+
+.location__content {
+  position: relative;
+  z-index: 3;
+  max-width: 500px;
+  padding: 0 20px;
+}
+
+.location__title {
+      font-family: "Ballet", cursive;
+  font-size: 4rem;
+  margin-bottom: 1.0rem;
+  font-weight: 400;
+}
+
+.location__subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  margin: 0;
+}
+
+.location__name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.0rem;
+  text-transform: uppercase;
+}
+
+.location__address {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  margin-top: 0.1rem;
+}
+
+.location__btn {
+  display: inline-block;
+  padding: 8px 42px;
+  background: white;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 70px;
+}
+
+/* Dresscode */
+.dresscode__content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem 0;
+
+}
+
+.dresscode__content h2 {
+      font-family: "Ballet", cursive;
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 3rem;
+}
+.dresscode_text{
+  margin-top: 0;
+  font-weight: 300;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+}
+
+.colors span {
+  width: 36px;
+  height: 36px;
+  border: 1px solid white;
+}
+
+/* FORM */
+.section--light {
+  background: #fff;
+  padding: 80px 20px;
+}
+
+.form-wrapper {
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: left;
+  color: #000;
+  font-size: 16px;
+
+}
+
+.heading_form {
+text-align: center;
+}
+
+.form-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid #2e2e2e;
+  background: transparent;
+  padding: 8px 0;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+/* RADIO */
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.radio input {
+  display: none;
+}
+
+.custom-radio {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #2e2e2e;
+  border-radius: 50%;
+  position: relative;
+}
+
+.radio input:checked + .custom-radio::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #2e2e2e;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* NOTE */
+
+.form-note {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  padding: 12px;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  font-family: inherit;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: #c40000;
+  font-size: 12px;
+  min-height: 16px;
+}
+
+.status {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer-title {
+  font-family: "Ballet", cursive;
+  font-size: 3rem;
+  margin: 0;        
+}
+
+.footer-date {
+  opacity: 0.6;
+  letter-spacing: 0.2em;
+  font-size: 1.2rem;
+    font-family: "Ballet", cursive;
+    margin-bottom: 0;
+}
