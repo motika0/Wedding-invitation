@@ -46,7 +46,7 @@
         С огромной радостью и трепетом в сердцах мы приглашаем вас
         присоединиться к значимому для нас событию — дню нашей свадьбы.
         Этот день станет началом новой главы нашей совместной истории.
-        И мы будем безмерно счастливы, если вы разделити с нами
+        И мы будем безмерно счастливы, если вы разделите с нами
         эти счастливые моменты.
       </p>
     </section>
@@ -136,7 +136,7 @@
     <section class="section section--cream section--center">
       <h2 class="heading">ПОЖЕЛАНИЯ</h2>
 
-      <p class="text">Мы будем рады любому вашему подарку, но пожалуйста, не дарить нам цветы, прекрасной альтернативой
+      <p class="text">Мы будем рады любому вашему подарку, но просим, не дарить нам цветы. Прекрасной альтернативой
         станет бутылка вашего любимого алкогольного напитка, с пожеланием на какой повод нам ее открыть.</p>
     </section>
 
@@ -157,61 +157,61 @@
 
         <div class="colors">
           <span style="background:#d4c9bc"></span>
-          <span style="background:#CFC6B8"></span>
+          <span style="background:#999692"></span>
           <span style="background:#81634a"></span>
           <span style="background:#4f2f1d"></span>
-           <span style="background:#000"></span>
+          <span style="background:#000"></span>
         </div>
       </div>
     </section>
 
-      <div class="paper-tear-container">
+    <div class="paper-tear-container">
       <img src="images/paper-texture.png" alt="Разрыв бумаги" class="paper-tear-image">
     </div>
 
-<section class="section section--light">
-  <div class="form-wrapper">
-    <h2 class="heading heading_form">АНКЕТА ГОСТЯ</h2>
+    <section class="section section--light">
+      <div class="form-wrapper">
+        <h2 class="heading heading_form">АНКЕТА ГОСТЯ</h2>
 
-    <p class="form-description">
-      Чтобы мы смогли спланировать нашу свадьбу наилучшим образом,
-      и внести вас в список гостей, заполните поля ниже:
-    </p>
+        <p class="form-description">
+          Чтобы мы смогли спланировать нашу свадьбу наилучшим образом
+          и внести вас в список гостей, заполните поля ниже:
+        </p>
 
-    <form  id="wedding-form" class="form">
-      <label class="form-label">Ваше имя и фамилия</label>
-      <input type="text" class="form-input" name="name" id="name">
+        <form id="wedding-form" class="form">
+          <label class="form-label">Ваше имя и фамилия</label>
+          <input type="text" class="form-input" name="name" id="name">
 
-      <div class="error" id="name-error"></div>
+          <div class="error" id="name-error"></div>
 
-      <label class="form-label">Планируете ли вы присутствовать?</label>
+          <label class="form-label">Планируете ли вы присутствовать?</label>
 
-      <div class="radio-group">
-        <label class="radio">
-          <input type="radio" name="attendance" value="Да, с удовольствием" checked>
-          <span class="custom-radio"></span>
-          да, с удовольствием!
-        </label>
+          <div class="radio-group">
+            <label class="radio">
+              <input type="radio" name="attendance" value="Да, с удовольствием" checked>
+              <span class="custom-radio"></span>
+              да, с удовольствием!
+            </label>
 
-        <label class="radio">
-          <input type="radio" name="attendance" value="К сожалению, не смогу">
-          <span class="custom-radio"></span>
-          к сожалению, не смогу
-        </label>
+            <label class="radio">
+              <input type="radio" name="attendance" value="К сожалению, не смогу">
+              <span class="custom-radio"></span>
+              к сожалению, не смогу
+            </label>
+          </div>
+
+          <p class="form-note">
+            Просим подтвердить присутствие не позднее чем за месяц
+          </p>
+
+          <button type="submit" class="submit-btn">ОТПРАВИТЬ</button>
+
+          <div id="status" class="status"></div>
+
+        </form>
       </div>
-
-      <p class="form-note">
-        Просим подтвердить присутствие не позднее чем за месяц
-      </p>
-
-            <button type="submit" class="submit-btn">ОТПРАВИТЬ</button>
-
-      <div id="status" class="status"></div>
-
-    </form>
-  </div>
-</section>
-      <div class="paper-tear-container1">
+    </section>
+    <div class="paper-tear-container1">
       <img src="images/paper-texture.png" alt="Разрыв бумаги" class="paper-tear-image1">
     </div>
 
@@ -219,7 +219,7 @@
       <p class="footer-title">Waiting for you</p>
                   <p class="footer-numbers">
         Вероника <a class="footer-href" href="tel:+375444606446">+375 (44) 460-64-46</a><br>
-        Влад <a class="footer-href" href="tel:+375291980464">+375 (29) 198-04-64</a>
+        Владислав <a class="footer-href" href="tel:+375291980464">+375 (29) 198-04-64</a>
       </p>
       <p class="footer-date">08.08.2026</p>
 
@@ -229,12 +229,10 @@
   </div>
   <script src="./scripts/form.js"></script>
   <script>
-  // Ждём полной загрузки страницы со всеми ресурсами
-  window.addEventListener('load', function() {
-    // Добавляем класс к body, чтобы показать контент
-    document.body.classList.add('page-loaded');
-  });
-</script>
+    window.addEventListener('load', function () {
+      document.body.classList.add('page-loaded');
+    });
+  </script>
 </body>
 
 </html>
